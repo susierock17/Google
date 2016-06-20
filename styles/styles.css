@@ -1,0 +1,86 @@
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: arial,sans-serif;
+}
+
+.logo{
+    background-size:272px 92px;
+    width:272px;
+    height:92px;
+    background: url(../images/googlelogo_color_272x92dp.png);
+}
+
+/*.search-form {
+    position: absolute;
+    
+    
+}*/
+
+.search-box{
+    height: 38px;
+    background: #fff;
+    display: block;
+    border: 1px solid #d9d9d9;
+    max-width: 484px;
+    position: relative;
+    top: 311px;
+}
+
+.icon-box {
+    padding: 0 8px;
+    margin-top: -1px;
+    position: static;
+    float: right;
+    vertical-align: top;
+    line-height: 38px;
+}
+
+.icon{
+    cursor: pointer;
+    padding: 0 4px;
+    display: inline-block;
+}
+
+.icon-keyword{
+    height: 11px;
+    line-height: 0;
+    width: 19px;
+    vertical-align: middle;
+    background: url(../images/micro_black.gif);
+    opacity: 0.6;
+}
+
+.icon-keyword:hover{
+    opacity: 0.8;
+}
+
+.icon-microphone{
+    background: url(../images/download.png) no-repeat -3px 0;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 23px;
+    width: 17px;
+    vertical-align: middle;
+   
+}
+
+.input-box {
+    height: 100%;
+    padding: 5px 9px 0;
+    position: relative;
+    display: block;
+}
+
+.input-text {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    height: 26px;
+    width: 398px;
+    position: absolute;
+    left: 0px;
+    outline: none;
+    padding: 5px 9px 0;
+    font: 16px arial,sans-serif;
+}
