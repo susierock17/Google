@@ -4,27 +4,36 @@ body{
     font-family: arial,sans-serif;
 }
 
+.content {
+    padding-bottom: 35px;
+    margin: 0 auto;
+    min-width: 980px;
+    height: 233px;
+    margin-top: 89px;
+    padding-top: 109px;
+}
+
 .logo{
     background-size:272px 92px;
     width:272px;
     height:92px;
     background: url(../images/googlelogo_color_272x92dp.png);
+    
 }
 
-/*.search-form {
-    position: absolute;
-    
-    
-}*/
-
-.search-box{
+.search-form {
     height: 38px;
     background: #fff;
-    display: block;
     border: 1px solid #d9d9d9;
-    max-width: 484px;
+    width: 584px;
     position: relative;
     top: 311px;
+}
+
+.search-box{
+    height: 100%;
+    overflow: hidden;
+    padding: 5px 9px 0;
 }
 
 .icon-box {
@@ -34,6 +43,9 @@ body{
     float: right;
     vertical-align: top;
     line-height: 38px;
+    outline-width: 52px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .icon{
@@ -66,21 +78,20 @@ body{
 }
 
 .input-box {
-    height: 100%;
-    padding: 5px 9px 0;
     position: relative;
-    display: block;
 }
 
 .input-text {
     border: none;
     padding: 0px;
     margin: 0px;
-    height: 26px;
-    width: 398px;
+    height: auto;
+    width: 100%;
     position: absolute;
+    z-index: 6;
     left: 0px;
     outline: none;
-    padding: 5px 9px 0;
+    height: 26px;
+    width: 498px;
     font: 16px arial,sans-serif;
 }
