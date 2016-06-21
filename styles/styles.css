@@ -1,24 +1,57 @@
 body{
     background-color: #fff;
-    color: #000;
+    /*color: #000;*/
     font-family: arial,sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.search {
+        margin-top: -15px;
+            padding-left: 284px;
+    padding-right: 284px;
+    margin-left: 74px;
+    margin-right: 74px;
+        position: absolute;
+    top: 311px;
+        overflow: visible;
+            margin-top: -15px;
+            width: 100%;
+        
 }
 
 .content {
     padding-bottom: 35px;
-    margin: 0 auto;
-    min-width: 980px;
+     margin-top: 89px;
+}
+
+.body-a {
+        /*display: block;*/
     height: 233px;
-    margin-top: 89px;
+    /*margin-top: 89px;*/
+   
+}
+
+.body-b {
     padding-top: 109px;
+    /*text-align: -webkit-center;*/
 }
 
 .logo{
     background-size:272px 92px;
     width:272px;
     height:92px;
-    background: url(../images/googlelogo_color_272x92dp.png);
+    background: url(../images/googlelogo_color_272x92dp.png) no-repeat;
     
+}
+
+.logo-subtext {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    left: 215px;
+    position: relative;
+    top: 76px;
+    white-space: nowrap;
 }
 
 .search-form {
@@ -27,12 +60,64 @@ body{
     border: 1px solid #d9d9d9;
     width: 584px;
     position: relative;
-    top: 311px;
+    
+    
+}
+
+.search-form-a {
+    max-width: 584px;
+    margin-top: -1px;
+}
+
+.header-box {
+    position: absolute;
+    top: -295px;
+    right: 0;
+    width: 100%;
+    font-size: 13px;
+    height: 30px;
+    font-size: 13px;
+        color: #222;
+        font-family: arial,sans-serif;
+}
+
+.header-content {
+        min-width: 230px;
+        padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+       width: 230.297px;
+       margin-left: 0!important;
+    margin-right: 0!important;
+
+}
+
+.header-body {
+        flex: 0 1 auto;
+}
+
+#mail {
+    display: inline-block;
+    padding-left: 0;
+    line-height: 24px;
+    outline: none;
+    vertical-align: middle;
+}
+
+#images {
+    display: inline-block;
+        padding-left: 15px;
+    vertical-align: middle;
+    line-height: 24px;
+    outline: none;
+
 }
 
 .search-box{
     height: 100%;
-    overflow: hidden;
     padding: 5px 9px 0;
 }
 
