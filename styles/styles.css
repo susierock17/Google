@@ -191,7 +191,7 @@ form {
     padding-right: 27px;
     text-align: left;
     white-space: normal;
-    width: 265px;
+    width: 275px;
 }
 
 .apps-item {
@@ -431,16 +431,68 @@ form {
     padding-right: 284px;
 }
 
+.search-box-a {
+
+}
+
+.search-box-b {
+    padding-bottom: 2px;
+    padding-top: 3px;
+    width: 638px;
+}
+
+.search-box-b1 {
+    position: relative;
+}
+
+.search-box-b11 {
+    line-height: 0;
+    max-width: 650px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.search-box-b111 {
+    /*display: inline-block;*/
+    float: right;
+    line-height: normal;
+}
+
+.search-box-b112 {
+    display: none;
+    float: right;
+    vertical-align: top;
+    width: 40px;
+    margin-right: 9px;
+}
+
+.search-box-b113 {
+    max-width: 584px;
+    margin: -1px 0px 1px;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: top;
+    border: 1px solid #d9d9d9;
+}
+
+.search-box-b12 {
+    min-width: 585px;
+    top: 39px;
+    position: absolute;
+    left: 1px;
+}
+
 .icon-box {
+    line-height: 38px;
     padding: 0 8px;
     margin-top: -1px;
     position: static;
     float: right;
     vertical-align: top;
-    line-height: 38px;
+    /*line-height: 38px;
     outline-width: 52px;
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 8px;*/
 }
 
 .icon{
@@ -478,6 +530,16 @@ form {
     width: 17px;
     vertical-align: middle;
    
+}
+
+.search-input {
+    height: 100%;
+    overflow: hidden;
+    padding: 5px 9px 0;
+}
+
+.search-box-b113:active {
+    border-color: #4d90fe;
 }
 
 .input-box {
