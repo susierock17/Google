@@ -65,10 +65,8 @@ body{
     margin-top: 0;
     position: absolute;
     top: 311px;
-        min-width: 980px;
-        width: 100%;
-    
-    
+    min-width: 980px;
+    width: 100%;
 }
 
 .search-form-a {
@@ -124,7 +122,7 @@ body{
 
 .apps-a1 {
     display: none;
-               border-color: transparent;
+    border-color: transparent;
     border-style: dashed dashed solid;
     border-width: 0 8.5px 8.5px;
     position: absolute;
@@ -134,23 +132,18 @@ body{
     width: 0;
     animation-name: gb__a;
     animation-duration: 0.2s;
-    animation-timing-function: initial;
-    animation-delay: initial;
-    animation-iteration-count: initial;
-    animation-direction: initial;
-    animation-fill-mode: initial;
-    animation-play-state: initial;
     border-bottom-color: rgba(0,0,0,.2);
     top: 36px;
 }
 
 .apps-a2 {
+    display: none;
     border-color: transparent;
     border-bottom-color: #fff;
     border-style: dashed dashed solid;
     border-width: 0 8.5px 8.5px;
     position: absolute;
-        display: none;
+    display: none;
     left: 6.5px;
     top: 37px;
     z-index: 1;
@@ -158,18 +151,12 @@ body{
     width: 0;
     animation-name: gb__a;
     animation-duration: 0.2s;
-    animation-timing-function: initial;
-    animation-delay: initial;
-    animation-iteration-count: initial;
-    animation-direction: initial;
-    animation-fill-mode: initial;
-    animation-play-state: initial;
 }
 
 .apps-b {
     max-height: 343px;
     height: 496px;
-    display: block;
+    display:none;
         min-height: 196px;
     overflow-y: auto;
     width: 320px;
@@ -189,7 +176,6 @@ body{
 }
 
 .apps-list {
-    display: block;
     background: #fff;
     margin: 0;
     min-height: 100px;
@@ -198,8 +184,6 @@ body{
     text-align: left;
     white-space: normal;
     width: 265px;
-        font-family: arial,sans-serif;
-        font-size: 13px;
 }
 
 .apps-item {
@@ -291,7 +275,7 @@ body{
 }
 
 .more {
-       color: #737373;
+    color: #737373;
     text-decoration: none;
     margin-top: 0;
     position: static;
@@ -306,8 +290,8 @@ body{
 }
 
 .services-a {
-    display: block;
-        border-bottom: 1px solid #ebebeb;
+    display:none;
+    border-bottom: 1px solid #ebebeb;
     left: 28px;
     width: 264px;
     line-height: 40px;

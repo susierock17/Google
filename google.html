@@ -4,7 +4,72 @@
 <head>
     <!--<link href="/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">-->
     <title>Google</title>
+
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script type="text/javascript">
+       var appShown = false;
+       function Apps() {
+           var apps_b = document.getElementById('apps-b'),
+           google_apps = document.getElementById('google-apps'),
+           apps_a1 = document.getElementById('apps-a1'),
+           apps_a2 = document.getElementById('apps-a2');
+        
+           function showAppWindow(){
+               apps_b.setAttribute("aria-hidden","false");
+               apps_b.style.display = "block";
+               google_apps.setAttribute("aria-expanded","true");
+               apps_a1.style.display = "block";
+               apps_a2.style.display = "block";               
+           }
+           
+           function closeAppWindow (){
+               apps_b.setAttribute("aria-hidden","true");
+               apps_b.style.display = "none";
+               google_apps.setAttribute("aria-expanded","false");
+               apps_a1.style.display = "none";
+               apps_a2.style.display = "none";               
+               
+           }
+
+           if(appShown)
+               closeAppWindow();            
+           else
+                showAppWindow();
+
+            appShown = !appShown;           
+        }
+       function showMoreApps () {
+            var more = document.getElementById('more'),
+            apps_list1 = document.getElementById('apps-list1'),
+            services_b = document.getElementById('services-b');
+            function show(){
+                more.setAttribute("aria-hidden","false");
+                more.setAttribute("aria-expanded","true");
+                more.style.display="none";
+                apps_list1.setAttribute("aria-hidden","false");
+                apps_list1.style.display="block";
+                services_b.setAttribute("aria-hidden","false");
+            }
+            function close(){
+                more.setAttribute("aria-hidden","true");
+                more.setAttribute("aria-expanded","false");
+                more.style.display="block";
+                apps_list1.setAttribute("aria-hidden","true");
+                apps_list1.style.display="none";
+                services_b.setAttribute("aria-hidden","true");
+            }
+            if(document.getElementById('apps-b').scrollTop>0){
+                console.log(document.getElementById('apps-b').scrollTop);
+                show();
+            }
+            else{
+                console.log(document.getElementById('apps-b').scrollTop);
+                close();
+            }
+           
+        }
+    </script>
+
 </head>
 
 <body>
@@ -22,14 +87,14 @@
                     </div>
                     <div class="header-b">
                         <div class="header-b1"></div>
-                        <div class="apps">
+                        <div id="apps" class="apps">
                             <div class="apps-a">
-                                <a href="https://www.google.by/intl/ru/options/" title="Приложения Google" class="google-apps" aria-expanded="false" tabindex="0" data-ved="0EL0nCBI"></a>
-                                <div class="apps-a1"></div>
-                                <div class="apps-a2"></div>
+                                <a href="#" onclick="Apps()" title="Приложения Google" id="google-apps" class="google-apps" aria-expanded="false"></a>
+                                <div id="apps-a1" class="apps-a1"></div>
+                                <div id="apps-a2" class="apps-a2"></div>
                             </div>
-                            <div class="apps-b" aria-label="Приложения Google" aria-hidden="true" role="region">
-                                <ul class="apps-list" aria-dropeffect = "move">
+                            <div id="apps-b" class="apps-b" aria-hidden="true" role="region" onscroll="showMoreApps()">
+                                <ul class="apps-list" style="display:block" aria-dropeffect="move">
                                     <li class="apps-item">
                                         <a href="https://myaccount.google.com/?utm_source=OGB" class="item-style">
                                             <div class="div-a"></div>
@@ -141,9 +206,10 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <a href="https://www.google.by/intl/ru/options/" class="more" aria-label="Другие приложения Google" aria-expanded="false" aria-hidden="true">Еще</a>
+                                <a href="#" id="more" class="more" aria-label="Еще приложения Google" aria-expanded="false"
+                                    aria-hidden="true">Еще</a>
                                 <span class="services-a"></span>
-                                <ul class="apps-list" aria-dropeffect = "move" aria-hidden="false">
+                                <ul id="apps-list1" class="apps-list" style="display:none" aria-dropeffect="move" aria-hidden="true">
                                     <li class="apps-item">
                                         <a href="https://docs.google.com/document/?usp=docs_alc" class="item-style">
                                             <div class="div-a"></div>
@@ -185,13 +251,14 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <a href="https://www.google.by/intl/ru/options/" class="services-a services-b" aria-hidden="true">Другие сервисы Google</a>
+                                <a href="https://www.google.by/intl/ru/options/" id="services-b" class="services-a services-b" aria-hidden="true">Другие сервисы Google</a>
                             </div>
                         </div>
                         <div class="enter">
                             <div class="apps-a">
-                                <a href="https://accounts.google.com/ServiceLogin?hl=ru&passive=true&continue=https://www.google.by/%3Fgfe_rd%3Dcr%26ei%3DLklqV5PHJ-P07gTBlbSQBA" class="enter-button" target="_top">Войти</a>
-                               <div class="apps-a1" style="display:none"></div>
+                                <a href="https://accounts.google.com/ServiceLogin?hl=ru&passive=true&continue=https://www.google.by/%3Fgfe_rd%3Dcr%26ei%3DLklqV5PHJ-P07gTBlbSQBA"
+                                    class="enter-button" target="_top">Войти</a>
+                                <div class="apps-a1" style="display:none"></div>
                                 <div class="apps-a2" style="display:none"></div>
                             </div>
                         </div>
