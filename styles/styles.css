@@ -675,6 +675,31 @@ input[type="submit"]:hover {
     white-space: nowrap;
     padding-left: 27px;
     margin: 0 !important;
+    cursor: auto;
+}
+
+.setting-list {
+    left: -94px;
+    background: #fff;
+    border: 1px solid #999;
+    bottom: 30px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: left;
+}
+
+.setting-list-item {
+    color: #777;
+    display: block;
+    line-height: 44px;
+    padding: 0 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 2px 10px 0;
+}
+
+.setting-list-item:hover {
+    text-decoration: underline;
 }
 
 .footer-box-item:hover {
