@@ -7,6 +7,15 @@
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script type="text/javascript">
+
+       function highlightInput () {
+           document.getElementsByClassName('search-box-b113')[0].style.borderColor = '#4d90fe';
+       }
+
+       function unHighlightInput () {
+           document.getElementsByClassName('search-box-b113')[0].style.borderColor = '';
+       }
+
        var appShown = false;
        function Apps() {
            var apps_b = document.getElementById('apps-b'),
@@ -291,7 +300,7 @@
                             <div class="search-box-b112"></div>
                             <div class="search-box-b113">
                                 <div style="height: 38px;">
-                                    <div style ="float: left;" ></div>
+                                    <div style="float: left;"></div>
                                     <div class="icon-box">
                                         <a class="icon" aria-label="Экранная клавиатура">
                                             <span class="icon-keyword">
@@ -303,7 +312,7 @@
                                     </div>
                                     <div class="search-input">
                                         <div class="input-box">
-                                            <input class="input-text" title="Поиск">
+                                            <input class="input-text" title="Поиск" onfocus = "highlightInput()" onblur = "unHighlight()">
                                         </div>
                                     </div>
                                 </div>
@@ -314,22 +323,60 @@
                     </div>
                     <div></div>
                 </div>
-                <div class="search-box-c"></div>
+                <div class="search-box-c" style="padding-top:18px">
+                    <center>
+                        <input value="Поиск в Google" type="submit">
+                        <input value ="Мне повезёт!" type="submit">
+                    </center>
+                </div>
             </div>
         </div>
         <center>
-            <div class="content">
-                <div class="body-a">
-                    <div class="body-b">
+            <div style = "content">
+                <div style = "height:233px;margin-top:89px">
+                    <div style="padding-top:109px">
                         <div class="logo" align="left" title="Google">
                             <div class="logo-subtext">Беларусь</div>
                         </div>
                     </div>
                 </div>
+                <div style = "height:118px"></div>
+                <div style = "margin-top: 12px">
+                    <div style = "margin-bottom: 24px">
+                        <div class = "bottom-string">
+                            Google.by предлагается на: 
+                            <a href ="https://www.google.by/setprefs?sig=0_Gyz0ipjB26xukQ-TmFSxyefGbgc%3D&hl=be&source=homepage" class = "bel">Беларуская</a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </center>
-
+        <div class="footer">
+            <div style = "height: 52px; visibility: visible;">
+                <div>
+                    <div class = "footer-box">
+                        <div class = "footer-box-a">
+                            <span class = "footer-box-a1">
+                                <a class = "footer-box-item" href="//www.google.by/intl/ru/policies/privacy/?fg=1">Конфиденциальность</a>
+                                <a class = "footer-box-item" href="//www.google.by/intl/ru/policies/terms/?fg=1">Условия</a>
+                                <span style = "display:inline-block;position:relative">
+                                    <a class="footer-box-item" role = "button">Настройки</a>
+                                    <span></span>
+                                </span>
+                                <a class = "footer-box-item" href="https://www.google.com/?gfe_rd=cr&ei=LklqV5PHJ-P07gTBlbSQBA&gws_rd=cr&fg=1">Перейти на Google.com</a>
+                            </span>
+                            <span class = "footer-box-a2">
+                                <a class = "footer-box-item" href="//www.google.by/intl/ru/ads/?fg=1">Реклама</a>
+                                <a class = "footer-box-item" href="//www.google.by/services/?fg=1">Для бизнеса</a>
+                                <a class = "footer-box-item" href="//www.google.by/intl/ru/about.html?fg=1">Все о Google</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
