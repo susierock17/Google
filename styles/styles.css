@@ -377,7 +377,7 @@ form {
     border: 1px solid #4285f4;
     font-weight: bold;
     outline: none;
-    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background:#4387fd;
     display: inline-block;
     line-height: 28px;
     padding: 0 12px;
@@ -429,19 +429,40 @@ form {
     width: 100%;
 }
 
+.main-form {
+    overflow: visible;
+    max-width: none;
+    margin: 0 auto;
+    width: 833px;
+}
+
 .search-box{
-    padding-left: 284px;
-    padding-right: 284px;
+    /*padding-left: 173px;
+    padding-right: 173px;
+    padding-top: 8px;
+    margin: -1px 0 0;
+    position: relative;*/
+    position: relative;
+    margin: -1px 0 0;
+        padding-top: 8px;
+        padding-right: 0;
+        padding-left: 0px;
 }
 
 .search-box-a {
-
+    padding-left: 13px;
+    padding-right: 10px;
+    padding-top: 6px;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
 }
 
 .search-box-b {
     padding-bottom: 2px;
     padding-top: 3px;
     width: 638px;
+    padding-left:120px;
 }
 
 .search-box-b1 {
@@ -455,10 +476,20 @@ form {
     white-space: nowrap;
 }
 
+.search-box-b12 {
+    min-width: 585px;
+    top: 39px;
+    position: absolute;
+    left: 1px;
+}
+
 .search-box-b111 {
-    /*display: inline-block;*/
+    display: inline-block;
     float: right;
     line-height: normal;
+    visibility: hidden;
+    height: 28px;
+    position: relative;
 }
 
 .search-box-b112 {
@@ -510,7 +541,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    /*background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);*/
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -524,10 +554,6 @@ input[type="submit"]:hover {
     position: static;
     float: right;
     vertical-align: top;
-    /*line-height: 38px;
-    outline-width: 52px;
-    padding-left: 8px;
-    padding-right: 8px;*/
 }
 
 .icon{
@@ -590,6 +616,16 @@ input[type="submit"]:hover {
     height: 26px;
     width: 498px;
     font: 16px arial,sans-serif;
+}
+
+.content {
+    padding-bottom: 35px;
+}
+
+.conten-center {
+    margin: 0 auto;
+    min-width: 980px;
+    display: block;
 }
 
 .footer {
